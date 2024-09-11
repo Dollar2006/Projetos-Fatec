@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: #181818;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        .grid-container{
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: 10% auto 10%;
+            grid-template-columns: 20% 60% 20%;
+            border: 1px solid black;
+        }
+        .sidebar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+        .nav a::after{
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            height: 5px;
+            width: 0%;
+            background: rgb(166, 43, 170);
+            transition: .5s ease;
+        }
+        .nav a:hover::after{
+            width: 100%;
+        }
+        .main-content p{
+            margin: 30px 10px;
+        }
+        .main-content button{
+            position: relative;
+            background: transparent;
+            color: white;
+            font-style: italic;
+            border: 2px solid rgb(166, 43, 170);
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            border-radius: 20px;
+            transition: .5s ease-in-out;
+        }
+        .main-content button:hover{
+            background: rgb(166, 43, 170);
+        }
+        .header{
+            background-color: rgb(166, 43, 170);
+            text-align: center;
+            grid-column: 1 / 4;
+        }
+        .footer{
+            background-color: rgb(88, 28, 90);
+            grid-column: 1 / 4;
+            font-size: 20px;
+            text-align: center;
+        }   
+        ul li{
+            list-style: none;
+            margin: 40px;
+        }
+        ion-icon{
+            color: white;
+            background-color: gray;
+            padding: 20px;
+            font-size: 30px;
+            border-radius: 50%;
+            transition: .5s ease-in-out;
+        }
+        ion-icon:hover{
+            font-size: 40px;
+            color: rgb(166, 43, 170);
+        }
+    </style>
+    <title>exx4</title>
+</head>
+<body>
+    <!-- 5. **Layout Completo de Página**
+    - Crie um layout completo de página com um cabeçalho, um menu de navegação à esquerda, um conteúdo principal, uma barra lateral à direita e um rodapé. A navegação e a barra lateral devem ter 20% da largura cada, e o conteúdo principal deve ocupar os 60% restantes. -->
+    <div class="grid-container">
+        <div class="header">
+            <h1>Logo</h1>
+        </div>
+        <div class="sidebar">
+                <ion-icon name="search-sharp"></ion-icon>
+            <ul>
+                <li><ion-icon name="home-sharp"></ion-icon></li>
+                <li><ion-icon name="pricetag-sharp"></ion-icon></li>
+                <li><ion-icon name="information-circle-sharp"></ion-icon></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Bem vindo ao site!</h2>
+            <p>Este site de vendas oferece uma ampla variedade de produtos, desde eletrônicos e moda até itens para casa e cuidados pessoais.</p>
+            <p>Com uma interface intuitiva e fácil de navegar, o usuário pode pesquisar por categorias, visualizar ofertas especiais e filtrar resultados para encontrar exatamente o que procura.</p> 
+            <p>Além disso, o site proporciona opções seguras de pagamento e entrega rápida, garantindo uma experiência de compra conveniente e confiável para os clientes.</p>
+            <button>Veja mais aqui</button>
+        </div>
+        <div class="nav">
+            <ul class="nav-list">
+                <li><a href="#">eletrônicos</a></li>
+                <li><a href="#">moda</a></li>
+                <li><a href="#">cuidados pessoais</a></li>
+            </ul>
+        </div>
+        <div class="footer">Rodapé</div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

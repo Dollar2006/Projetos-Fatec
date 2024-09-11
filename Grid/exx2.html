@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exx2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        body{
+            min-width: 100vw;
+            height: 100vh;
+            background-color: rgb(36, 36, 36);
+        }
+        .grid-container{
+            display: grid;
+            margin: auto;
+            height: 50%;
+            width: 80%;
+            grid-template-columns: auto auto;
+            border: 1px solid rgb(165, 165, 165);
+        }
+        .header{
+            grid-column: 1 / 3;
+            background: rgb(235, 185, 20);
+            text-align: center;
+            border: 2px solid rgb(165, 165, 165);
+        }
+        .row-below{
+            background: rgb(235, 185, 20);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2. **Exercício 2: Layout de cabeçalho e Conteúdo:**
+    - Crie um layout com um cabeçalho na parte superior e duas colunas abaixo dele. O cabeçalho deve ocupar toda a largura, e as colunas devem ter larguras iguais. -->
+    <div class="grid-container">
+        <div class="header">Cabeçalho</div>
+        <div class="row-below">Linha de baixo</div>
+        <div class="row-below">Linha de baixo</div>
+    </div>
+</body>
+</html>

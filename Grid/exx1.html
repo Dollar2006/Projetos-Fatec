@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXX1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-width: 100vw;
+            height: 100vh;
+            background: linear-gradient(45deg,rgb(39, 39, 39),rgb(49, 49, 49),rgb(245, 245, 245));
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            grid-template-columns: 70% 30%;
+            box-shadow: 2px 4px 6px rgb(162, 0, 255);
+            animation: alternar 3s linear infinite;
+        }
+        span{
+            border: 1px solid cyan;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(162, 0, 255);
+            box-shadow: 2px 4px 6px rgb(162, 0, 255);
+            animation: alternar 3s linear infinite;
+        }
+        @keyframes alternar{
+            0%{
+                box-shadow: 2px 4px 6px rgb(162, 0, 255);
+                color: rgb(162, 0, 255);
+            }
+            25%{
+                box-shadow: 2px 4px 10px 4px rgb(47, 0, 255);
+                color: rgb(47, 0, 255);
+            }
+            50%{
+                box-shadow: 4px 6px 10px 8px rgb(0, 132, 255);
+                color: rgb(0, 132, 255);
+            }
+            75%{
+                box-shadow: 2px 4px 10px 4px rgb(47, 0, 255);
+                color: rgb(47, 0, 255)
+            }
+            100%{
+                box-shadow: 2px 4px 6px rgb(162, 0, 255);
+                color: rgb(162, 0, 255)
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Exercicio 1
+     1. **Exercício 1: Layout de duas colunas:**
+    - Crie um layout simples de duas colunas usando CSS Grid. A primeira coluna deve ocupar 70% da largura e a segunda coluna 30%. -->
+    <div class="container">
+        <span>Olá</span>
+         <span>Olá</span>
+        <span>Olá</span>
+         <span>Olá</span>
+        <span>Olá</span>
+         <span>Olá</span>
+        <span>Olá</span>
+         <span>Olá</span>
+        <span>Olá</span>
+         <span>Olá</span>
+        <span>Olá</span>
+         <span>Olá</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .grid-container{
+            display: grid;
+            width:80%;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 25% 75%;
+            border: 1px solid black;
+        }
+        .sidebar{
+            border: 1px solid blue;
+        }
+        .main-content{
+            border: 1px solid red;
+        }
+    </style>
+    <title>exx4</title>
+</head>
+<body>
+    <!-- 4.  **Layout com Sidebar Fixa**
+    - Crie um layout com uma barra lateral (sidebar) fixa na esquerda e um conteúdo principal ao lado direito da sidebar. A sidebar deve ocupar 25% da largura e o conteúdo principal 75%. -->
+    <div class="grid-container">
+        <div class="sidebar">Barra Lateral</div>
+        <div class="main-content">Conteudo principal</div>
+    </div>
+</body>
+</html>
